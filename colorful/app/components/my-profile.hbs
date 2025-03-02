@@ -1,0 +1,15 @@
+<div class='d-flex vh-100 vw-100 align-items-center justify-content-center'>
+  <div>
+    <h1 class='display-1'>Welcome to
+      <strong style={{this.colorStyle}}>Colorful!</strong></h1>
+    <div class='mb-3'>
+      <label for='color' class='form-label'>Your profile color:</label>
+      <Input
+        class='form-control'
+        id='color'
+        @value={{@account.color}}
+        {{on 'keyup' (perform this.inputHandler)}}
+      />
+    </div>
+  </div>
+</div>
